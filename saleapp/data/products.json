@@ -4,7 +4,7 @@
     "name": "iPhone 7 Plus",
     "description": "Apple, 32GB, Ram: 3GB, iOS13",
     "price": 17000000,
-    "image": "images/iphone11.png",
+    "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-7-plus-red.jpg",
     "category_id": 1
   },
   {
@@ -12,7 +12,7 @@
     "name": "iPad Pro 2020",
     "description": "Apple, 128GB, Ram: 6GB",
     "price": 37000000,
-    "image": "images/iphone11.png",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-11-select-202003?wid=445&hei=550&fmt=jpeg&qlt=95&op_usm=0.5%2C0.5&.v=1583430767182",
     "category_id": 2
   },
   {
@@ -20,7 +20,15 @@
     "name": "Galaxy Note 10 Plus",
     "description": "Samsung, 64GB, Ram: 6GB",
     "price": 24000000,
-    "image": "images/iphone11.png",
+    "image": "https://cdn1.viettelstore.vn/Images/Product/ProductImage/205101937.png",
     "category_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Laptop Apple MacBook Air 13\" 2019",
+    "description": "Core i5/8GB/256GB SSD/UHD 617/macOS/1.3 kg",
+    "price": 36990000,
+    "image": "https://lh3.googleusercontent.com/EdLLoLMtdb-eIbE6Egm2FxMfFIhM8fS1bqofnmQyvCzMxw10rl6IcdschPlNn-dQEdKN5WJuTq1Gjetzdg=w500-rw",
+    "category_id": 3
   }
 ]

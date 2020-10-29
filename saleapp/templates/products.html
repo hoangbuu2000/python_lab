@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quan ly san pham</title>
+    <title>Quản lý sản phẩm</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Quan ly san pham</h1>
+        <h1>Quản lý sản phẩm</h1>
         <table class="table">
             <tr>
                 <th></th>
@@ -19,7 +19,7 @@
             </tr>
             {% for product in products %}
             <tr>
-                <td><img width="100px" src="{{ url_for('static', filename='images/iphone11.png') }}" alt=""></td>
+                <td><img width="100px" src="{{ product.image }}" alt=""></td>
                 <td>{{ product.id }}</td>
                 <td><a href="{{ url_for('product_detail', product_id = product.id) }}">{{ product.name }}</a></td>
                 <td>{{ product.description }}</td>

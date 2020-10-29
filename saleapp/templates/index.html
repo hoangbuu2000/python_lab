@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1 class="alert alert-info text-center">BAN HANG ONLINE</h1>
-    <ul>
-        <li><a href="{{ url_for('list_products') }}">Tat ca</a></li>
+    <h1 class="alert alert-info text-center">BÁN HÀNG TRỰC TUYẾN</h1>
+    <ul class="list-group">
+        <li><a class="list-group-item list-group-item-action text-primary" href="{{ url_for('list_products') }}">Tất cả</a></li>
         {% for cate in categories %}
-        <li><a href="#">{{ cate.name }}</a></li>
+        <li><a class="list-group-item list-group-item-action text-primary" href="{{ url_for('list_products', category_id=cate.id) }}">{{ cate.name }}</a></li>
         {% endfor %}
     </ul>
 </body>
