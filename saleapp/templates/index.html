@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1 class="alert alert-info text-center">BAN HANG ONLINE</h1>
+    <ul>
+        <li><a href="{{ url_for('list_products') }}">Tat ca</a></li>
+        {% for cate in categories %}
+        <li><a href="#">{{ cate.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
