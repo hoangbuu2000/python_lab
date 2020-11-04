@@ -9,6 +9,34 @@
 <body>
     <div class="container">
         <h1>Quản lý sản phẩm</h1>
+        <div>
+            <form action="">
+                <div class="form-group">
+                    <input name="kw" type="text" class="form-control" placeholder="Nhap tu khoa tim kiem"
+                           {% if kw %}
+                           value="{{ kw }}"
+                           {% endif %}>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-6">
+                        <input name="from_price" type="number" class="form-control" placeholder="Nhap gia bat dau"
+                        {% if from_price %}
+                               value="{{ from_price }}"
+                        {% endif %}>
+                    </div>
+                    <div class="col-md-6">
+                        <input name="to_price" type="number" class="form-control" placeholder="Nhap gia ket thuc"
+                        {% if to_price %}
+                               value="{{ to_price }}"
+                        {% endif %}>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Tim kiem">
+                </div>
+            </form>
+        </div>
         <table class="table">
             <tr>
                 <th></th>

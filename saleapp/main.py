@@ -10,14 +10,14 @@ def index():
 
 @app.route("/products")
 def list_products():
-    products = utils.read_data(path='data/products.json')
-    category = int(request.args.get('category_id')) if request.args.get('category_id') else None
-    result = []
-    if category:
-        for p in products:
-            if p["category_id"] == category:
-                result.append(p)
-    return render_template('products.html', products=result if category else products)
+    cate_id = request.args.get('category_id')
+    kw = request.args.get('kw')
+    from_price = request.args.get('from_price')
+    to_price = request.args.get('to_price')
+
+    products = utils.read_product(cate_id=cate_id, kw=kw, from_price=from_price, to_price=to_price)
+
+    return render_template('products.html', products=products, kw=kw, from_price=from_price, to_price=to_price)
 
 
 @app.route("/products/<int:product_id>")
